@@ -180,9 +180,9 @@ class Transcribe extends Component {
                   currentComponent.setState({transcriptionJobComplete: true});
                   currentComponent.setState({transcriptionInProgress: false});
                   let url = data.TranscriptionJob.Transcript.TranscriptFileUri
-                  let signedKey = url.split('https://s3.amazonaws.com/aws-transcribe-us-east-1-prod/')            
-                  let bucket = "aws-transcribe-us-east-1-prod"
-                  let key = signedKey[1].split('?')[0]
+                  // let signedKey = url.split('https://s3.amazonaws.com/aws-transcribe-us-east-1-prod/')            
+                  // let bucket = "aws-transcribe-us-east-1-prod"
+                  // let key = signedKey[1].split('?')[0]
                   currentComponent.setState({outputURL: url});
                   
                   // currentComponent.givePublicAccessToTranscriptObject(key).then(data => {
